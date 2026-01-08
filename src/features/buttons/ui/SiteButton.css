@@ -5,12 +5,12 @@
     cursor: pointer;
     font-weight: 500;
     color: rgb(255, 255, 255);
-    transition: 0.5s ease;
     font-size: 0.9em;
+    text-align: center;
 }
 
 .button-pink {
-    background-color: #E6478F;
+    background-color: var(--main-color);
 }
 
 .button-black {
@@ -18,8 +18,9 @@
 }
 
 .button-pink:hover {
-    background-color: #b72365;
+    background-color: var(--main-color-hover);
 }
+
 .button-black:hover {
     background-color: #49475d;
 } 

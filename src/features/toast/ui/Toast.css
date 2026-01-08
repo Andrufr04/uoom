@@ -1,0 +1,22 @@
+.toaster {
+    position: fixed;
+    bottom: 1em;
+    right: 1em;
+    width: 20em;
+    z-index: 20;
+}
+
+.toast-text {
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.542);
+    color: #eee;
+    padding: 7px 15px;
+    text-align: center;
+    margin-top: 0.5em;
+    opacity: 1;
+    transition: opacity 0.5s ease;
+}
+
+.toast-hide {
+    opacity: 0;
+}

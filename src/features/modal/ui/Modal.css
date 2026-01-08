@@ -1,0 +1,25 @@
+.app-modal {
+    background-color: #0000009d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 2;
+}
+.app-modal-dlg {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    max-width: 420px;
+    border-radius: 1em;
+}
+
+.app-modal-close {
+    text-align: end;
+    font-size: 2em;
+    margin-right: 0.2em;
+}

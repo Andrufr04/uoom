@@ -1,0 +1,61 @@
+.product-card {
+    width: 15.5%;
+    margin-bottom: 1.4em;
+}
+
+.product-img {
+    width: 100%;
+    border-radius: 12px;
+}
+
+.product-price-row {
+    margin-top: 0.7em;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.product-price {
+    font-size: 1.3em;
+    font-weight: 500;
+}
+
+.product-name {
+    margin-top: 0.7em;
+    font-size: 0.8em;
+}
+
+.ellipsis {
+    display: -webkit-box;              /* Enables flexbox-like layout for text */
+    -webkit-box-orient: vertical;      /* Sets vertical orientation */
+    -webkit-line-clamp: 2;             /* Limit to 2 lines */
+    overflow: hidden;                  /* Hide overflowing text */
+    text-overflow: ellipsis;           /* Add "..." at the end */
+    line-height: 1.2em;                /* Adjust line height */
+    max-height: 3em;                   /* line-height × number of lines */
+}
+
+.product-rating-bg {
+    color: rgb(91, 91, 91);
+    display: inline-block;
+}
+
+.product-rating-row {
+    margin-top: 0.7em;
+    display: flex;
+    gap: 0.3em;
+    background-color: rgb(234, 234, 234);
+    font-size: 0.8em;
+    padding: 0.1em;
+    padding-left: 0.6em;
+    padding-right: 0.6em;
+    border-radius: 6px;
+}
+
+.product-rating {
+    color: black;
+}
+
+.product-star {
+    color: var(--main-color);
+}

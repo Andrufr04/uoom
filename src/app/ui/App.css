@@ -1,0 +1,17 @@
+.preloader {
+  background-color: #28282879;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 100;
+}
+
+.preloader-spinner {
+    width: 80px;
+    fill: var(--main-color);
+}

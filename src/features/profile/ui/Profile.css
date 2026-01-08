@@ -1,0 +1,24 @@
+.profile-menu {
+    display: none;
+    position: absolute;
+    z-index: 20;
+    border-radius: 0.7em;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: rgb(255, 255, 255);
+    width: 15em;
+    padding: 1em;
+    top: 100%;
+    right: 50%;
+    transform: translateX(50%);
+    font-size: 0.9em;
+}
+
+.profile-menu-button {
+    margin-bottom: 1em;
+    cursor: pointer;
+}
+
+.profile-menu-log-out-button {
+    margin-bottom: 0;
+    color: rgb(195, 0, 0);
+}

@@ -1,0 +1,25 @@
+.carusel-bg {
+    margin-top: 3em;
+    background-color: rgb(165, 165, 232);
+    height: 20em;
+    border-radius: 12px;
+}
+
+.carusel-button {
+    width: 6%;
+    /* height: 12%; */
+    opacity: 100%;
+}
+
+.carusel-button-icon {
+    font-size: 1.4em;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    padding: 0.2em 0.45em;
+    border-radius: 100px;
+}
+
+.carusel-button-icon:hover {
+    padding: 0.25em 0.50em;
+    color: var(--main-color);
+}
