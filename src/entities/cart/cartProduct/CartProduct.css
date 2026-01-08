@@ -1,0 +1,37 @@
+.cart-item-buttons {
+    display: flex;
+}
+
+.cart-item-cnt-btns {
+    display: flex;
+    gap: 0.5em;
+    align-items: center;
+}
+
+.cart-item-cnt-btn {
+    background-color: rgb(235, 235, 235);
+    border-radius: 50%;
+    width: 1.9em;
+    height: 1.8em;
+    text-align: center;
+}
+
+.bi-trash3 {
+    color: rgb(157, 157, 157);
+    font-size: 1.1em;
+}
+
+.cart-item-name {
+    font-size: 1em;
+    color: black;
+}
+
+.cart-item-metadata {
+    color: rgb(141, 141, 141);
+    font-size: 0.8em;
+}
+
+.cart-item-card {
+    border-radius: 0.5em;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}

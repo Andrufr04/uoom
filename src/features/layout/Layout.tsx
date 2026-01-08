@@ -95,11 +95,11 @@ export default function Layout() {
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" name="archive-linear-24" aria-hidden="true" type="mono" className="icon___OznRH" style={{ width: "24px", height: "24px" }}><path fill="currentColor" fill-rule="evenodd" d="M21 18V9.732A2 2 0 0 0 22 8V5a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v3a2 2 0 0 0 1 1.732V18a3 3 0 0 0 3 3h12a3 3 0 0 0 3-3M5 10h14v8a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1zm5 2h4a1 1 0 1 1 0 2h-4a1 1 0 1 1 0-2M4 8V5h16v3z" clip-rule="evenodd"></path></svg>
                             <div>Мої замовлення</div>
                         </div>
-                        <div className="nav-button">
+                        <Link to={"/cart"} className="nav-button">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" name="bar-cart-linear-24" aria-hidden="true" type="mono" className="icon___OznRH" style={{ width: "24px", height: "24px" }}><path fill="currentColor" fill-rule="evenodd" d="M1 3a1 1 0 0 1 1-1h3.199a1 1 0 0 1 .987.842L6.852 7H22a1 1 0 0 1 .98 1.196l-1.507 7.558a2.8 2.8 0 0 1-1.035 1.64 2.94 2.94 0 0 1-1.834.606H9.472a2.94 2.94 0 0 1-1.834-.605 2.8 2.8 0 0 1-1.035-1.64L5.02 8.205l-.008-.047L4.346 4H2a1 1 0 0 1-1-1m6.231 6 1.33 6.347c.036.174.136.34.297.463.16.124.369.194.588.19h9.184a.94.94 0 0 0 .588-.19.8.8 0 0 0 .296-.46L20.781 9zM7 22a2 2 0 1 1 4 0 2 2 0 0 1-4 0m10 0a2 2 0 1 1 4 0 2 2 0 0 1-4 0" clip-rule="evenodd"></path></svg>
                             <div>Кошик</div>
                             <div className="cart-amount">{cart.items.reduce((n, item) => n + item.cnt, 0)}</div>
-                        </div>
+                        </Link>
                     </div>
                 </div>
             </nav>

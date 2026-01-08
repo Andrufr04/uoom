@@ -1,0 +1,82 @@
+.cart {
+    margin-top: 2em;
+}
+
+.cart-text {
+    font-size: 1.5em;
+    font-weight: 500;
+}
+
+.empty-cart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.empty-cart-img {
+    margin-top: 2em;
+    width: 13%;
+}
+
+.empty-cart-img img{
+    width: 100%;
+}
+
+.empty-cart-info {
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+.cart-item-cnt-btns {
+
+}
+
+.ellipsis {
+    display: -webkit-box;              /* Enables flexbox-like layout for text */
+    -webkit-box-orient: vertical;      /* Sets vertical orientation */
+    -webkit-line-clamp: 2;             /* Limit to 2 lines */
+    overflow: hidden;                  /* Hide overflowing text */
+    text-overflow: ellipsis;           /* Add "..." at the end */
+    line-height: 1.2em;                /* Adjust line height */
+    max-height: 3em;                   /* line-height × number of lines */
+}
+
+.cart-content {
+    margin-top: 1em;
+    display: flex;
+}
+
+.cart-order {
+    border-radius: 0.5em;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    height: fit-content;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.cart-cost {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cart-order-text {
+    font-weight: 600;
+    font-size: 1.3em;
+    margin-bottom: 2em;
+}
+
+.cart-total-price {
+    font-size: 1.3em;
+    font-weight: 600;
+    color: var(--main-color);
+}
+
+.cart-total-cost {
+    align-items: end;
+}
+
+.order-btn {
+    margin-top: 2em;
+    width: 100%;
+}

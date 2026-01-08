@@ -13,8 +13,19 @@ import type { UserType } from "../../entities/user/model/UserType"
 import type CartType from "../../entities/cart/model/CartType"
 import CartDao from "../../entities/cart/api/CartDao"
 import "./App.css"
+import Cart from "../../pages/cart/Cart"
 
-function App() {
+declare global {
+  interface Number {
+    toMoney: () => string;
+  }
+}
+
+Number.prototype.toMoney = function (): string {
+  return this.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
+}
+
+export default function App() {
   const [user, setUser] = useState<UserType | null>(null);
 
   const [toastData, setToastData] = useState<ToastData | null>(null)
@@ -93,6 +104,7 @@ function App() {
             <Route index element={<Home />} />
             <Route path="privacy" element={<Privacy />} />
             <Route path='category/:slug' element={<Category />} />
+            <Route path="cart" element={<Cart />} />
           </Route>
         </Routes>
       </BrowserRouter>
@@ -172,10 +184,5 @@ function App() {
         </div>}
     </AppContext.Provider>
   )
-}
-
-export default App
-function setUser(arg0: any) {
-  throw new Error("Function not implemented.")
 }
 

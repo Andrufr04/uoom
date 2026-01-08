@@ -12,8 +12,8 @@ body {
 }
 
 :root {
-    --main-color: #e31a96;
-    --main-color-hover: #f086c4;
+    --main-color: #0fa36a;
+    --main-color-hover: #3abc8a;
 }
 
 .container-ultra-plus-mega-pro-max-verstappen {
@@ -46,6 +46,8 @@ main {
     flex-direction: column;
     justify-content: space-between;
     align-items: center; 
+    color: black;
+    text-decoration: none;
 }
 
 .top-header {
@@ -57,7 +59,7 @@ main {
 
 .nav-list {
     display: flex;
-    gap: 20px; /* расстояние между элементами */
+    gap: 20px;
     list-style: none;
     padding: 0;
     margin: 0;

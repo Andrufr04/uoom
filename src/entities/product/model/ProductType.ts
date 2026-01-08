@@ -5,7 +5,8 @@ type ProductType = {
     name:         string,
     rating:       number,
     reviewAmount: number,
-    slug:         string
+    slug:         string,
+    stock?:       number
 }
 
 export type { ProductType }
