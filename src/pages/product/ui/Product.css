@@ -1,0 +1,157 @@
+.product-info {
+    margin-top: 3em;
+    display: flex;
+    gap: 4em;
+}
+
+.product-info-img-container {
+    width: 100%;
+}
+
+.product-info-img {
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    width: 500px;
+    border-radius: 1.1em;
+}
+
+.product-info-text {
+    height: fit-content;
+    display: flex;
+    justify-content: space-between;
+}
+
+.product-info-name {
+    font-size: 1.5em;
+    width: 85%;
+    font-weight: 600;
+}
+
+.ellipsis {
+    display: -webkit-box;              /* Enables flexbox-like layout for text */
+    -webkit-box-orient: vertical;      /* Sets vertical orientation */
+    -webkit-line-clamp: 2;             /* Limit to 2 lines */
+    overflow: hidden;                  /* Hide overflowing text */
+    text-overflow: ellipsis;           /* Add "..." at the end */
+    line-height: 1.2em;                /* Adjust line height */
+    max-height: 3em;                   /* line-height × number of lines */
+}
+
+.product-info-btn {
+    display: flex;
+}
+
+.product-info-icon {
+    height: fit-content;
+    padding: 0.2em 0.5em;
+    border-radius: 50em;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.product-info-rating {
+    display: flex;
+    gap: 1em;
+}
+
+.star {
+    color: var(--main-color);
+}
+
+.review-star {
+    fill: var(--main-color);
+    color: var(--main-color);
+}
+
+.product-info-review {
+    color: var(--main-color);
+}
+
+.product-info-reviewAmount {
+    color: rgb(170, 170, 170);
+}
+
+.product-info-price {
+    font-size: 2em;
+    font-weight: 600;
+}
+
+.product-info-order {
+    display: flex;
+    justify-content: space-between;
+}
+
+.product-info-sale {
+    display: flex;
+    gap: 0.4em;
+}
+
+.product-info-sale-text {
+    font-weight: 600;
+    color: var(--main-color);
+}
+
+.review {
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding: 1em;
+    border-radius: 0.7em;
+    margin-bottom: 1em;
+}
+
+.review-img {
+    background-color: rgba(128, 128, 128, 0.734);
+    border-radius: 50em;
+}
+
+.review-name {
+    font-size: 1.1em;
+    font-weight: 600;
+}
+
+.review-message {
+    margin-left: 3.3em;
+    color: rgb(54, 54, 54);
+}
+
+.product-info-col1 {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.review-person {
+    display: flex;
+    align-items: center;
+    gap: 0.7em;
+}
+
+.review-icon {
+    background-color: rgb(217, 217, 217);
+    padding: 0.5em 0.7em;
+    border-radius: 50em;
+}
+
+.bi-person-fill {
+    color: rgb(255, 255, 255);
+}
+
+.product-info-h {
+    font-size: 1.2em;
+    font-weight: 600;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.description {
+    font-size: 0.8em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.grey-stars {
+    color: rgb(217, 217, 217);
+}
+
+.product-info-col2 {
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding: 1em;
+    border-radius: 1.1em;
+    height: fit-content;
+}

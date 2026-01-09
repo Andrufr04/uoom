@@ -6,7 +6,15 @@ type ProductType = {
     rating:       number,
     reviewAmount: number,
     slug:         string,
-    stock?:       number
+    stock?:       number,
+    description?: string,
+    reviews?:      Review[]
 }
 
-export type { ProductType }
+type Review = {
+    name:         string,
+    message:      string,
+    stars:        number
+}
+
+export type { ProductType, Review }

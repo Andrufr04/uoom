@@ -14,6 +14,7 @@ import type CartType from "../../entities/cart/model/CartType"
 import CartDao from "../../entities/cart/api/CartDao"
 import "./App.css"
 import Cart from "../../pages/cart/Cart"
+import Product from "../../pages/product/Product"
 
 declare global {
   interface Number {
@@ -104,6 +105,7 @@ export default function App() {
             <Route index element={<Home />} />
             <Route path="privacy" element={<Privacy />} />
             <Route path='category/:slug' element={<Category />} />
+            <Route path="product/:slug" element={<Product/>} />
             <Route path="cart" element={<Cart />} />
           </Route>
         </Routes>

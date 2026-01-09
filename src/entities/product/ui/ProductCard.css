@@ -1,6 +1,8 @@
 .product-card {
     width: 15.5%;
     margin-bottom: 1.4em;
+    text-decoration: none;
+    color: black;
 }
 
 .product-img {
