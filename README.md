@@ -1,73 +1,43 @@
-# React + TypeScript + Vite
+# uoom
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Вебзастосунок, створений на **React**, **TypeScript** та **Vite**, з використанням архітектурного підходу **Feature-Sliced Design (FSD)**.  
+Проєкт орієнтований на зрозумілу структуру коду, масштабованість та зручність подальшої підтримки.
 
-Currently, two official plugins are available:
+## Використаний стек
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- React  
+- TypeScript  
+- Vite  
+- Feature-Sliced Design (FSD)
 
-## React Compiler
+## Архітектура проєкту
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+У проєкті використовується підхід Feature-Sliced Design, який передбачає поділ коду на логічні шари відповідно до їхньої відповідальності.
 
-## Expanding the ESLint configuration
+### Структура тек
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+src/
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+├── app/
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+├── pages/
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+├── features/
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+└── entities/
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+public/
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+
+- **app** — ініціалізація застосунку, глобальні налаштування
+- **pages** — сторінки застосунку
+- **features** — реалізація користувацьких сценаріїв та дій
+- **entities** — бізнес-сутності та пов’язана з ними логіка
+- **public** — статичні ресурси
+
+## Мета проєкту
+
+Проєкт створений у межах навчального курсу **«Розробка комерційних додатків»**.  
+Основною метою є закріплення практичних навичок розробки сучасних вебзастосунків та ознайомлення з підходами, що використовуються у комерційній розробці.
+
+Проєкт має навчальний характер і слугує прикладом організації фронтенд-застосунку з використанням сучасних інструментів та архітектурних рішень.
