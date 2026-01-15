@@ -49,3 +49,6 @@ public/
 <img width="1920" height="1027" alt="category" src="https://github.com/user-attachments/assets/f2226e28-db35-42d7-9b36-e14b3417a350" />
 <img width="1909" height="881" alt="cart" src="https://github.com/user-attachments/assets/c95f57ba-dbc6-4de3-8abc-07e4135f5562" />
 <img width="1920" height="1080" alt="1" src="https://github.com/user-attachments/assets/4e435582-5f5f-4b3d-85a6-63121dbda190" />
+
+
+https://github.com/Andrufr04/uoom/blob/main/screeeeen/1.png
